@@ -2,7 +2,7 @@ using UnityEditor;
 
 public class EntitiesEditorWindow : EditorWindow
 {
-    private const string MENUROOT = "Assets/Create/Editor for Entites/";
+    private const string MENUROOT = "Assets/Create/Script for Entites/";
     [MenuItem(MENUROOT + "Component/UnmanagedComponent", priority = 10)]
     private static void CreateComponentDataCS()
     {
