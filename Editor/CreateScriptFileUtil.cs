@@ -1,11 +1,14 @@
-using Unity.VisualScripting;
 using UnityEditor;
+using System.IO;
 
-public static class CreateScriptFileUtil
+namespace AtsuAtsu.EntitiesUtil.editor
 {
-    private const string PLUGIN_PATH = "Packages/com.atsuatsu.entities.editor/";
-    public static void CreateScriptFile(string fileName, string newFileName)
+    public static class CreateScriptFileUtil
     {
-        ProjectWindowUtil.CreateScriptAssetFromTemplateFile(System.IO.Path.Combine(PLUGIN_PATH, $"Templates/{fileName}"), newFileName);
+        private const string PLUGIN_PATH = "Packages/com.atsuatsu.entities.editor/";
+        public static void CreateScriptFile(string fileName, string newFileName)
+        {
+            ProjectWindowUtil.CreateScriptAssetFromTemplateFile(Path.Combine(PLUGIN_PATH, $"Templates/{fileName}"), newFileName);
+        }
     }
 }
