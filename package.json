@@ -1,6 +1,6 @@
 {
     "name": "com.atsuatsu.entities.editor",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "displayName": "Unity Editor for Entities",
     "description": "Unity Editor Extension for Entities. It is unofficial package.",
     "unity": "2022.3",
