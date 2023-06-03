@@ -1,6 +1,6 @@
 using Unity.Entities;
 
-public struct #SCRIPTNAME# : ISystem
+public partial struct #SCRIPTNAME# : ISystem
 {
 
 }
